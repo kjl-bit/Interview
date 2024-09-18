@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-09-17 19:48:11.361198",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "candidate_name",
+  "interviewer_name",
+  "role_applied",
+  "column_break_brow",
+  "interview_date",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "candidate_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Candidate Name",
+   "options": "Candidate Data",
+   "reqd": 1
+  },
+  {
+   "fieldname": "interviewer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "interviewer_name",
+   "options": "Interviewer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "role_applied",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Role applied",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_brow",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "interview_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Interview Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Hired\nRejected\nIn progress"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-18 14:45:59.168275",
+ "modified_by": "Administrator",
+ "module": "Interview",
+ "name": "Interview Schedule",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "Hired"
+  },
+  {
+   "color": "Red",
+   "title": "Rejected"
+  },
+  {
+   "color": "Yellow",
+   "title": "In progress"
+  }
+ ]
+}
